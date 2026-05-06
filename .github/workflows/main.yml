@@ -1,1 +1,46 @@
+name: Cima Star Build APK
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      # الخطوة دي مهمة عشان تربط الأيقونات والصور اللي انت محددها في الـ pubspec
+      - name: Generate Launcher Icons
+        run: flutter pub run flutter_launcher_icons:main || echo "No launcher icons to generate"
+
+      # لو بتستخدم build_runner لتوليد ملفات الـ JSON
+      - name: Build Runner
+        run: flutter pub run build_runner build --delete-conflicting-outputs || echo "No models to generate"
+
+      - name: Build APK (Cima Star)
+        run: flutter build apk --release
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Cima-Star-Release-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
