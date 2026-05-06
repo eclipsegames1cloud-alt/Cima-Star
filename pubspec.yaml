@@ -1,0 +1,73 @@
+name: cima_star
+description: CimaStar v4 - Professional Movie & TV Streaming App with VidAPI (89K+ Movies, 19K+ TV Shows)
+publish_to: 'none'
+version: 4.0.0+4
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  get: ^4.6.6
+
+  # Network
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+
+  # Storage
+  shared_preferences: ^2.2.2
+  get_storage: ^2.1.1
+  path_provider: ^2.1.2
+
+  # UI & Animations
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  flutter_staggered_animations: ^1.1.1
+  auto_size_text: ^3.0.0
+  flutter_blurhash: ^0.8.2
+  lottie: ^3.0.0
+
+  # Video Player
+  better_player: ^0.0.84
+  video_player: ^2.8.2
+  chewie: ^1.7.5
+
+  # WebView
+  webview_flutter: ^4.4.2
+
+  # Downloads
+  flutter_downloader: ^1.11.2
+  permission_handler: ^11.2.0
+
+  # Notifications
+  flutter_local_notifications: ^17.0.0
+
+  # JSON (kept for potential future use, but models use manual fromJson)
+  json_annotation: ^4.8.1
+
+  # Background Tasks
+  workmanager: ^0.5.7
+
+  # Utils
+  intl: ^0.19.0
+  url_launcher: ^6.2.3
+  share_plus: ^7.2.2
+  timeago: ^3.6.1
+  pull_to_refresh: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/json/

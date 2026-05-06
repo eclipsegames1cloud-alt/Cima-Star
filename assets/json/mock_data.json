@@ -1,0 +1,80 @@
+{
+  "page": 1,
+  "per_page": 24,
+  "total": 6,
+  "total_pages": 1,
+  "items": [
+    {
+      "tmdb_id": "278",
+      "imdb_id": "tt0111161",
+      "title": "The Shawshank Redemption",
+      "year": "1994",
+      "poster_url": "https://image.tmdb.org/t/p/w500/q6y0Go1TSGEw2PT6aJsWgH0Vr5x.jpg",
+      "rating": "9.3",
+      "genre": "Drama, Crime",
+      "popularity": "98.12",
+      "type": "movie",
+      "embed_url": "https://vaplayer.ru/embed/movie/tt0111161"
+    },
+    {
+      "tmdb_id": "155",
+      "imdb_id": "tt0468569",
+      "title": "The Dark Knight",
+      "year": "2008",
+      "poster_url": "https://image.tmdb.org/t/p/w500/1hnjzBJWiKfeTR3dARIIK9qNHRv.jpg",
+      "rating": "9.0",
+      "genre": "Action, Crime, Drama",
+      "popularity": "95.45",
+      "type": "movie",
+      "embed_url": "https://vaplayer.ru/embed/movie/tt0468569"
+    },
+    {
+      "tmdb_id": "1396",
+      "imdb_id": "tt0903747",
+      "title": "Breaking Bad",
+      "year": "2008",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ztkUQFLlC19CCMYHW63ONe0njJ7.jpg",
+      "rating": "9.5",
+      "genre": "Crime, Drama, Thriller",
+      "popularity": "1200.50",
+      "type": "tv",
+      "embed_url": "https://vaplayer.ru/embed/tv/tt0903747"
+    },
+    {
+      "tmdb_id": "27205",
+      "imdb_id": "tt1375666",
+      "title": "Inception",
+      "year": "2010",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg",
+      "rating": "8.8",
+      "genre": "Action, Sci-Fi, Thriller",
+      "popularity": "89.30",
+      "type": "movie",
+      "embed_url": "https://vaplayer.ru/embed/movie/tt1375666"
+    },
+    {
+      "tmdb_id": "66732",
+      "imdb_id": "tt4574334",
+      "title": "Stranger Things",
+      "year": "2016",
+      "poster_url": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "rating": "8.7",
+      "genre": "Drama, Fantasy, Horror",
+      "popularity": "450.80",
+      "type": "tv",
+      "embed_url": "https://vaplayer.ru/embed/tv/tt4574334"
+    },
+    {
+      "tmdb_id": "157336",
+      "imdb_id": "tt0816692",
+      "title": "Interstellar",
+      "year": "2014",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "rating": "8.7",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "popularity": "85.20",
+      "type": "movie",
+      "embed_url": "https://vaplayer.ru/embed/movie/tt0816692"
+    }
+  ]
+}
