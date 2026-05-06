@@ -25,15 +25,15 @@ jobs:
         with:
           channel: 'stable'
 
-      - name: Install dependencies
-        run: flutter pub get
+      - name: Fix Dependencies and Install
+        run: |
+          flutter pub add workmanager:^0.9.0+3
+          flutter pub get
 
-      # الخطوة دي مهمة عشان تربط الأيقونات والصور اللي انت محددها في الـ pubspec
       - name: Generate Launcher Icons
         run: flutter pub run flutter_launcher_icons:main || echo "No launcher icons to generate"
 
-      # لو بتستخدم build_runner لتوليد ملفات الـ JSON
-      - name: Build Runner
+      - name: Build Runner (Generate Models)
         run: flutter pub run build_runner build --delete-conflicting-outputs || echo "No models to generate"
 
       - name: Build APK (Cima Star)
